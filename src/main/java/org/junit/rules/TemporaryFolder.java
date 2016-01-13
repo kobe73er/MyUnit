@@ -1,11 +1,11 @@
 package org.junit.rules;
 
-import static org.junit.Assert.fail;
+import static common.Assert.fail;
 
 import java.io.File;
 import java.io.IOException;
 
-import org.junit.Rule;
+import org.junit.annotation.Rule;
 
 /**
  * The TemporaryFolder Rule allows creation of files and folders that should

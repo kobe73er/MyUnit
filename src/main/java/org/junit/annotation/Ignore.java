@@ -1,4 +1,4 @@
-package org.junit;
+package org.junit.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 /**
  * Sometimes you want to temporarily disable a test or a group of tests. Methods annotated with
- * {@link org.junit.Test} that are also annotated with <code>&#064;Ignore</code> will not be executed as tests.
+ * {@link org.junit.annotation.Test} that are also annotated with <code>&#064;Ignore</code> will not be executed as tests.
  * Also, you can annotate a class containing test methods with <code>&#064;Ignore</code> and none of the containing
  * tests will be executed. Native JUnit 4 test runners should report the number of ignored tests along with the
  * number of tests that ran and the number of tests that failed.

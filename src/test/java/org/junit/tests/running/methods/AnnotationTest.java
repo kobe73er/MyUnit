@@ -1,19 +1,19 @@
 package org.junit.tests.running.methods;
 
+import static common.Assert.assertThat;
 import static org.hamcrest.CoreMatchers.allOf;
 import static org.hamcrest.CoreMatchers.containsString;
-import static org.junit.Assert.assertThat;
 
 import java.util.Collection;
 import java.util.HashSet;
 
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.annotation.After;
+import org.junit.annotation.AfterClass;
+import org.junit.annotation.Before;
+import org.junit.annotation.BeforeClass;
+import org.junit.annotation.Test;
 import org.junit.runner.Description;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
@@ -92,7 +92,7 @@ public class AnnotationTest extends TestCase {
     static public class FailureTest {
         @Test
         public void error() throws Exception {
-            org.junit.Assert.fail();
+            common.Assert.fail();
         }
     }
 

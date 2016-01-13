@@ -1,9 +1,8 @@
 package org.junit.tests.validation;
 
-import static org.junit.Assert.assertEquals;
-
-import org.junit.Before;
-import org.junit.Test;
+import static common.Assert.assertEquals;
+import org.junit.annotation.Before;
+import org.junit.annotation.Test;
 import org.junit.internal.runners.JUnit4ClassRunner;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

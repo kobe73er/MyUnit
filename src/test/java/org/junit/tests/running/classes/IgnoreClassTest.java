@@ -1,10 +1,9 @@
 package org.junit.tests.running.classes;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
-
-import org.junit.Ignore;
-import org.junit.Test;
+import static common.Assert.assertEquals;
+import static common.Assert.fail;
+import org.junit.annotation.Ignore;
+import org.junit.annotation.Test;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 

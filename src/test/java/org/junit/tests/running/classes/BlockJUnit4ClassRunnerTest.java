@@ -1,12 +1,12 @@
 package org.junit.tests.running.classes;
 
-import static org.junit.Assert.assertEquals;
+import static common.Assert.assertEquals;
 
 import java.util.List;
 
-import org.junit.Test;
+import org.junit.annotation.Test;
 import org.junit.runners.BlockJUnit4ClassRunner;
-import org.junit.runners.model.InitializationError;
+import org.junit.runners.model.exception.InitializationError;
 
 public class BlockJUnit4ClassRunnerTest {
     public static class OuterClass {

@@ -1,15 +1,15 @@
 package org.junit.internal;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertArrayEquals;
+import static common.Assert.assertArrayEquals;
+import static common.Assert.assertEquals;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.junit.FixMethodOrder;
-import org.junit.Test;
+import org.junit.annotation.FixMethodOrder;
+import org.junit.annotation.Test;
 import org.junit.runners.MethodSorters;
 
 public class MethodSorterTest {

@@ -1,4 +1,4 @@
-package org.junit;
+package common;
 
 import org.hamcrest.Matcher;
 
@@ -7,7 +7,7 @@ import org.hamcrest.Matcher;
  * is meaningful and should or should not be executed). A test for which an assumption
  * fails should not generate a test case failure.
  *
- * @see org.junit.Assume
+ * @see common.Assume
  * @since 4.12
  */
 @SuppressWarnings("deprecation")

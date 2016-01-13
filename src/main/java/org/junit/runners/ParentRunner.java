@@ -13,11 +13,11 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.ClassRule;
-import org.junit.Ignore;
-import org.junit.Rule;
+import org.junit.annotation.AfterClass;
+import org.junit.annotation.BeforeClass;
+import org.junit.annotation.ClassRule;
+import org.junit.annotation.Ignore;
+import org.junit.annotation.Rule;
 import org.junit.internal.AssumptionViolatedException;
 import org.junit.internal.runners.model.EachTestNotifier;
 import org.junit.internal.runners.statements.RunAfters;
@@ -34,10 +34,10 @@ import org.junit.runner.manipulation.Sorter;
 import org.junit.runner.notification.RunNotifier;
 import org.junit.runner.notification.StoppedByUserException;
 import org.junit.runners.model.FrameworkMethod;
-import org.junit.runners.model.InitializationError;
 import org.junit.runners.model.RunnerScheduler;
 import org.junit.runners.model.Statement;
 import org.junit.runners.model.TestClass;
+import org.junit.runners.model.exception.InitializationError;
 import org.junit.validator.AnnotationsValidator;
 import org.junit.validator.PublicClassValidator;
 import org.junit.validator.TestClassValidator;
@@ -179,7 +179,7 @@ public abstract class ParentRunner<T> extends Runner implements Filterable,
      * <li>Run all non-overridden {@code @AfterClass} methods on the test-class
      * and superclasses: exceptions thrown by previous steps are combined, if
      * necessary, with exceptions from AfterClass methods into a
-     * {@link org.junit.runners.model.MultipleFailureException}.</li>
+     * {@link org.junit.runners.model.exception.MultipleFailureException}.</li>
      * </ol>
      * </li>
      * </ol>
@@ -222,7 +222,7 @@ public abstract class ParentRunner<T> extends Runner implements Filterable,
      * and superclasses before executing {@code statement}; all AfterClass methods are
      * always executed: exceptions thrown by previous steps are combined, if
      * necessary, with exceptions from AfterClass methods into a
-     * {@link org.junit.runners.model.MultipleFailureException}.
+     * {@link org.junit.runners.model.exception.MultipleFailureException}.
      */
     protected Statement withAfterClasses(Statement statement) {
         List<FrameworkMethod> afters = testClass

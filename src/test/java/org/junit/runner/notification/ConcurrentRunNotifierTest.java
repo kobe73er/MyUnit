@@ -1,6 +1,6 @@
 package org.junit.runner.notification;
 
-import org.junit.Test;
+import org.junit.annotation.Test;
 import org.junit.runner.Description;
 
 import java.util.Random;
@@ -13,9 +13,9 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import static common.Assert.assertThat;
+import static common.Assert.assertTrue;
 import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
 
 /**
  * Testing RunNotifier in concurrent access.

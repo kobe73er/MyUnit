@@ -1,6 +1,6 @@
 package org.junit.runners.parameterized;
 
-import org.junit.Test;
+import org.junit.annotation.Test;
 import org.junit.runner.Description;
 import org.junit.runner.Request;
 import org.junit.runner.RunWith;
@@ -9,7 +9,7 @@ import org.junit.runners.Parameterized;
 import java.util.Arrays;
 import java.util.Collection;
 
-import static org.junit.Assert.assertEquals;
+import static common.Assert.assertEquals;
 
 /**
  * @author Dmitry Baev charlie@yandex-team.ru

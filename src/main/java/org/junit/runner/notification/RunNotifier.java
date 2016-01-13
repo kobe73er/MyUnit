@@ -151,7 +151,7 @@ public class RunNotifier {
      * something false.
      *
      * @param failure the description of the test that failed and the
-     * {@link org.junit.AssumptionViolatedException} thrown
+     * {@link common.AssumptionViolatedException} thrown
      */
     public void fireTestAssumptionFailed(final Failure failure) {
         new SafeNotifier() {

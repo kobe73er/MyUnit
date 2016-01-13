@@ -1,12 +1,11 @@
 package org.junit.tests.experimental.rules;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
+import static common.Assert.assertEquals;
+import static common.Assert.assertThat;
 import static org.junit.experimental.results.PrintableResult.testResult;
 import static org.junit.experimental.results.ResultMatchers.isSuccessful;
-
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.annotation.Rule;
+import org.junit.annotation.Test;
 import org.junit.rules.ExternalResource;
 
 public class ExternalResourceRuleTest {

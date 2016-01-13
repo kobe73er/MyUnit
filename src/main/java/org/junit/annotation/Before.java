@@ -1,4 +1,4 @@
-package org.junit;
+package org.junit.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 /**
  * When writing tests, it is common to find that several tests need similar
  * objects created before they can run. Annotating a <code>public void</code> method
- * with <code>&#064;Before</code> causes that method to be run before the {@link org.junit.Test} method.
+ * with <code>&#064;Before</code> causes that method to be run before the {@link org.junit.annotation.Test} method.
  * The <code>&#064;Before</code> methods of superclasses will be run before those of the current class,
  * unless they are overridden in the current class. No other ordering is defined.
  * <p>
@@ -28,8 +28,8 @@ import java.lang.annotation.Target;
  * }
  * </pre>
  *
- * @see org.junit.BeforeClass
- * @see org.junit.After
+ * @see org.junit.annotation.BeforeClass
+ * @see org.junit.annotation.After
  * @since 4.0
  */
 @Retention(RetentionPolicy.RUNTIME)

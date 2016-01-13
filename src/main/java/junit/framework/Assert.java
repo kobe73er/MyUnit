@@ -3,7 +3,7 @@ package junit.framework;
 /**
  * A set of assert methods.  Messages are only displayed when an assert fails.
  *
- * @deprecated Please use {@link org.junit.Assert} instead.
+ * @deprecated Please use {@link common.Assert} instead.
  */
 @Deprecated
 public class Assert {

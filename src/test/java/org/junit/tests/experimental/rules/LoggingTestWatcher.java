@@ -1,6 +1,7 @@
 package org.junit.tests.experimental.rules;
 
-import org.junit.AssumptionViolatedException;
+import common.AssumptionViolatedException;
+
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 

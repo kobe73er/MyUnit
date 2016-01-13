@@ -1,15 +1,15 @@
 package org.junit.samples;
 
-import static org.junit.Assert.assertTrue;
+import static common.Assert.assertTrue;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import junit.framework.JUnit4TestAdapter;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.annotation.Before;
+import org.junit.annotation.BeforeClass;
+import org.junit.annotation.Ignore;
+import org.junit.annotation.Test;
 
 /**
  * A sample test case, testing {@link java.util.ArrayList}.

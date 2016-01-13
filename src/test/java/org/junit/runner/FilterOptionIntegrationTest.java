@@ -3,18 +3,17 @@ package org.junit.runner;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.annotation.Before;
+import org.junit.annotation.Test;
 import org.junit.experimental.categories.Category;
 import org.junit.experimental.categories.ExcludeCategories;
 import org.junit.experimental.categories.IncludeCategories;
 import org.junit.runner.notification.RunListener;
 import org.junit.tests.TestSystem;
-
+import static common.Assert.assertFalse;
+import static common.Assert.assertTrue;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
 
 public class FilterOptionIntegrationTest {
     private static final String INCLUDES_DUMMY_CATEGORY_0 = "--filter=" +

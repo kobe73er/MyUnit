@@ -4,7 +4,7 @@ import org.junit.internal.AssumptionViolatedException;
 import org.junit.runner.Description;
 import org.junit.runner.notification.Failure;
 import org.junit.runner.notification.RunNotifier;
-import org.junit.runners.model.MultipleFailureException;
+import org.junit.runners.model.exception.MultipleFailureException;
 
 public class EachTestNotifier {
     private final RunNotifier notifier;

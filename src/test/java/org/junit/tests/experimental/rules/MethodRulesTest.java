@@ -1,18 +1,18 @@
 package org.junit.tests.experimental.rules;
 
+import static common.Assert.assertEquals;
+import static common.Assert.assertThat;
+import static common.Assert.assertTrue;
+import static common.Assert.fail;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 import static org.junit.experimental.results.PrintableResult.testResult;
 import static org.junit.experimental.results.ResultMatchers.hasSingleFailureContaining;
 import static org.junit.experimental.results.ResultMatchers.isSuccessful;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.annotation.After;
+import org.junit.annotation.Before;
+import org.junit.annotation.Rule;
+import org.junit.annotation.Test;
 import org.junit.rules.MethodRule;
 import org.junit.rules.TestName;
 import org.junit.rules.TestRule;

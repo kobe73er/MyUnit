@@ -1,8 +1,8 @@
 package org.junit.runner;
 
 import org.junit.runners.Suite;
-import org.junit.runners.model.InitializationError;
 import org.junit.runners.model.RunnerBuilder;
+import org.junit.runners.model.exception.InitializationError;
 
 /**
  * Represents a strategy for computing runners and suites.

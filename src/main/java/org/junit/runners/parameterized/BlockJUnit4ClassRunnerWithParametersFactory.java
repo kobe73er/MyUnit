@@ -1,7 +1,7 @@
 package org.junit.runners.parameterized;
 
 import org.junit.runner.Runner;
-import org.junit.runners.model.InitializationError;
+import org.junit.runners.model.exception.InitializationError;
 
 /**
  * A {@link ParametersRunnerFactory} that creates

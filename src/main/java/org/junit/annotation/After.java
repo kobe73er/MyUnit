@@ -1,4 +1,4 @@
-package org.junit;
+package org.junit.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -6,10 +6,10 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * If you allocate external resources in a {@link org.junit.Before} method you need to release them
+ * If you allocate external resources in a {@link org.junit.annotation.Before} method you need to release them
  * after the test runs. Annotating a <code>public void</code> method
- * with <code>&#064;After</code> causes that method to be run after the {@link org.junit.Test} method. All <code>&#064;After</code>
- * methods are guaranteed to run even if a {@link org.junit.Before} or {@link org.junit.Test} method throws an
+ * with <code>&#064;After</code> causes that method to be run after the {@link org.junit.annotation.Test} method. All <code>&#064;After</code>
+ * methods are guaranteed to run even if a {@link org.junit.annotation.Before} or {@link org.junit.annotation.Test} method throws an
  * exception. The <code>&#064;After</code> methods declared in superclasses will be run after those of the current
  * class, unless they are overridden in the current class.
  * <p>
@@ -29,8 +29,8 @@ import java.lang.annotation.Target;
  * }
  * </pre>
  *
- * @see org.junit.Before
- * @see org.junit.Test
+ * @see org.junit.annotation.Before
+ * @see org.junit.annotation.Test
  * @since 4.0
  */
 

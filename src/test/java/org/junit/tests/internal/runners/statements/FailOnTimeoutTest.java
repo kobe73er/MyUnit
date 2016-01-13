@@ -1,25 +1,25 @@
 package org.junit.tests.internal.runners.statements;
 
+import static common.Assert.assertEquals;
+import static common.Assert.assertFalse;
+import static common.Assert.assertTrue;
+import static common.Assert.fail;
 import static java.lang.Long.MAX_VALUE;
 import static java.lang.Math.atan;
 import static java.lang.System.currentTimeMillis;
 import static java.lang.Thread.sleep;
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
 import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 import static org.junit.internal.runners.statements.FailOnTimeout.builder;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.annotation.Rule;
+import org.junit.annotation.Test;
 import org.junit.internal.runners.statements.FailOnTimeout;
 import org.junit.rules.ExpectedException;
 import org.junit.runners.model.Statement;
-import org.junit.runners.model.TestTimedOutException;
+import org.junit.runners.model.exception.TestTimedOutException;
 
 /**
  * @author Asaf Ary, Stefan Birkner

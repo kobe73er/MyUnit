@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.runners.model.FrameworkMethod;
-import org.junit.runners.model.MultipleFailureException;
 import org.junit.runners.model.Statement;
+import org.junit.runners.model.exception.MultipleFailureException;
 
 public class RunAfters extends Statement {
     private final Statement next;

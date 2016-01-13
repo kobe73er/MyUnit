@@ -1,10 +1,11 @@
 package org.junit.rules;
 
-import org.junit.AssumptionViolatedException;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
 import java.util.concurrent.TimeUnit;
+
+import common.AssumptionViolatedException;
 
 /**
  * The Stopwatch Rule notifies one of its own protected methods of the time spent by a test.

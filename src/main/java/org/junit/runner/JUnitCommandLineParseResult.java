@@ -7,7 +7,7 @@ import java.util.List;
 import org.junit.internal.Classes;
 import org.junit.runner.FilterFactory.FilterNotCreatedException;
 import org.junit.runner.manipulation.Filter;
-import org.junit.runners.model.InitializationError;
+import org.junit.runners.model.exception.InitializationError;
 
 class JUnitCommandLineParseResult {
     private final List<String> filterSpecs = new ArrayList<String>();

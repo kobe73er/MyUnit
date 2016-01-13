@@ -8,12 +8,12 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Ignore;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.Test.None;
+import org.junit.annotation.After;
+import org.junit.annotation.Before;
+import org.junit.annotation.Ignore;
+import org.junit.annotation.Rule;
+import org.junit.annotation.Test;
+import org.junit.annotation.Test.None;
 import org.junit.internal.runners.model.ReflectiveCallable;
 import org.junit.internal.runners.statements.ExpectException;
 import org.junit.internal.runners.statements.Fail;
@@ -27,9 +27,9 @@ import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runner.notification.RunNotifier;
 import org.junit.runners.model.FrameworkMethod;
-import org.junit.runners.model.InitializationError;
-import org.junit.runners.model.MultipleFailureException;
 import org.junit.runners.model.Statement;
+import org.junit.runners.model.exception.InitializationError;
+import org.junit.runners.model.exception.MultipleFailureException;
 
 /**
  * Implements the JUnit 4 standard test case class model, as defined by the

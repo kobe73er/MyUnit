@@ -3,10 +3,11 @@ package org.junit.rules;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.AssumptionViolatedException;
+import common.AssumptionViolatedException;
+
 import org.junit.runner.Description;
-import org.junit.runners.model.MultipleFailureException;
 import org.junit.runners.model.Statement;
+import org.junit.runners.model.exception.MultipleFailureException;
 
 /**
  * TestWatcher is a base class for Rules that take note of the testing

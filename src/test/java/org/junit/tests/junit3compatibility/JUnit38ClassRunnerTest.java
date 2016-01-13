@@ -1,19 +1,21 @@
 package org.junit.tests.junit3compatibility;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertNotNull;
+import static common.Assert.assertEquals;
+import static common.Assert.assertNotNull;
+import static common.Assert.assertNull;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
+
+import common.Assert;
+
 import junit.extensions.TestDecorator;
 import junit.framework.JUnit4TestAdapter;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.annotation.Test;
 import org.junit.internal.runners.JUnit38ClassRunner;
 import org.junit.runner.Description;
 import org.junit.runner.JUnitCore;

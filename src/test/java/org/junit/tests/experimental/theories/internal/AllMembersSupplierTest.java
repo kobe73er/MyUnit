@@ -1,16 +1,16 @@
 package org.junit.tests.experimental.theories.internal;
 
+import static common.Assert.assertEquals;
+import static common.Assert.assertNotEquals;
+import static common.Assert.assertThat;
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertThat;
 import static org.junit.tests.experimental.theories.TheoryTestUtils.potentialAssignments;
 
 import java.util.Arrays;
 import java.util.List;
 
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.annotation.Rule;
+import org.junit.annotation.Test;
 import org.junit.experimental.theories.DataPoint;
 import org.junit.experimental.theories.DataPoints;
 import org.junit.experimental.theories.ParameterSignature;

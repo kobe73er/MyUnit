@@ -1,18 +1,19 @@
 package org.junit.tests.running.classes;
 
+import static common.Assert.assertEquals;
+import static common.Assert.assertThat;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
 
 import java.util.List;
 
+import common.Assert;
+
 import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeMatcher;
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.annotation.BeforeClass;
+import org.junit.annotation.Ignore;
+import org.junit.annotation.Test;
 import org.junit.internal.AssumptionViolatedException;
 import org.junit.runner.Description;
 import org.junit.runner.JUnitCore;
@@ -24,8 +25,8 @@ import org.junit.runner.notification.RunListener;
 import org.junit.runner.notification.RunNotifier;
 import org.junit.runners.BlockJUnit4ClassRunner;
 import org.junit.runners.ParentRunner;
-import org.junit.runners.model.InitializationError;
 import org.junit.runners.model.RunnerScheduler;
+import org.junit.runners.model.exception.InitializationError;
 import org.junit.tests.experimental.rules.RuleMemberValidatorTest.TestWithNonStaticClassRule;
 import org.junit.tests.experimental.rules.RuleMemberValidatorTest.TestWithProtectedClassRule;
 

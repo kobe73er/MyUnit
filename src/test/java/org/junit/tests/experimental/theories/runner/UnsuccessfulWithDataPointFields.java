@@ -1,15 +1,15 @@
 package org.junit.tests.experimental.theories.runner;
 
+import static common.Assert.assertEquals;
+import static common.Assert.assertThat;
 import static org.hamcrest.CoreMatchers.allOf;
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
 import static org.junit.experimental.results.PrintableResult.testResult;
 import static org.junit.experimental.results.ResultMatchers.failureCountIs;
 import static org.junit.experimental.results.ResultMatchers.hasFailureContaining;
 import static org.junit.experimental.results.ResultMatchers.hasSingleFailureContaining;
 import org.hamcrest.CoreMatchers;
-import org.junit.Test;
+import org.junit.annotation.Test;
 import org.junit.experimental.results.PrintableResult;
 import org.junit.experimental.theories.DataPoint;
 import org.junit.experimental.theories.DataPoints;

@@ -1,15 +1,15 @@
 package org.junit.tests.experimental.categories;
 
+import static common.Assert.assertThat;
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
 
 import java.util.List;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.annotation.After;
+import org.junit.annotation.AfterClass;
+import org.junit.annotation.Before;
+import org.junit.annotation.BeforeClass;
+import org.junit.annotation.Test;
 import org.junit.experimental.categories.Category;
 import org.junit.experimental.categories.CategoryValidator;
 import org.junit.runners.model.FrameworkMethod;

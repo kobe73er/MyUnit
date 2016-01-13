@@ -1,8 +1,8 @@
 package org.junit.tests.experimental.rules;
 
+import static common.Assert.assertEquals;
+import static common.Assert.assertThat;
 import static org.hamcrest.CoreMatchers.containsString;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,10 +14,10 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.annotation.After;
+import org.junit.annotation.Before;
+import org.junit.annotation.Rule;
+import org.junit.annotation.Test;
 import org.junit.rules.TemporaryFolder;
 import org.junit.rules.TestRule;
 import org.junit.rules.Timeout;

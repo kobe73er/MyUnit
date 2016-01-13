@@ -4,11 +4,11 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.List;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Ignore;
-import org.junit.Test;
-import org.junit.Test.None;
+import org.junit.annotation.After;
+import org.junit.annotation.Before;
+import org.junit.annotation.Ignore;
+import org.junit.annotation.Test;
+import org.junit.annotation.Test.None;
 import org.junit.runners.BlockJUnit4ClassRunner;
 
 /**

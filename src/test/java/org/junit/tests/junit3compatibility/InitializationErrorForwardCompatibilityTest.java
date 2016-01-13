@@ -1,15 +1,14 @@
 package org.junit.tests.junit3compatibility;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-
+import static common.Assert.assertEquals;
+import static common.Assert.assertNotNull;
+import static common.Assert.assertTrue;
 import junit.framework.AssertionFailedError;
 import junit.framework.JUnit4TestAdapter;
 import junit.framework.TestListener;
 import junit.framework.TestResult;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.annotation.Before;
+import org.junit.annotation.Test;
 import org.junit.runner.Description;
 import org.junit.runner.RunWith;
 import org.junit.runner.Runner;

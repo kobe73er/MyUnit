@@ -1,11 +1,10 @@
 package org.junit.tests.experimental.rules;
 
-import static org.junit.Assert.assertEquals;
-
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
+import static common.Assert.assertEquals;
+import org.junit.annotation.After;
+import org.junit.annotation.Before;
+import org.junit.annotation.Rule;
+import org.junit.annotation.Test;
 import org.junit.experimental.runners.Enclosed;
 import org.junit.rules.TestName;
 import org.junit.runner.RunWith;

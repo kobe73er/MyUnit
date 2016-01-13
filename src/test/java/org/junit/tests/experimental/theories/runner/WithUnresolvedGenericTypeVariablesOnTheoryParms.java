@@ -1,6 +1,6 @@
 package org.junit.tests.experimental.theories.runner;
 
-import static org.junit.Assert.assertThat;
+import static common.Assert.assertThat;
 import static org.junit.experimental.results.PrintableResult.testResult;
 import static org.junit.experimental.results.ResultMatchers.failureCountIs;
 import static org.junit.experimental.results.ResultMatchers.hasFailureContaining;
@@ -12,7 +12,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-import org.junit.Test;
+import org.junit.annotation.Test;
 import org.junit.experimental.results.PrintableResult;
 import org.junit.experimental.theories.DataPoint;
 import org.junit.experimental.theories.DataPoints;

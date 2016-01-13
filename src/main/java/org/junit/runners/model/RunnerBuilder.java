@@ -7,6 +7,7 @@ import java.util.Set;
 
 import org.junit.internal.runners.ErrorReportingRunner;
 import org.junit.runner.Runner;
+import org.junit.runners.model.exception.InitializationError;
 
 /**
  * A RunnerBuilder is a strategy for constructing runners for classes.

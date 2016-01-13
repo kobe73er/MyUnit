@@ -1,7 +1,7 @@
 package org.junit.runners.parameterized;
 
+import static common.Assert.assertEquals;
 import static java.util.Collections.emptyList;
-import static org.junit.Assert.assertEquals;
 
 import java.lang.annotation.Annotation;
 import java.lang.annotation.ElementType;
@@ -10,7 +10,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import java.util.List;
 
-import org.junit.Test;
+import org.junit.annotation.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.model.TestClass;

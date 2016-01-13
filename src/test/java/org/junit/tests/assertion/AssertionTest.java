@@ -1,30 +1,31 @@
 package org.junit.tests.assertion;
 
+import static common.Assert.assertArrayEquals;
+import static common.Assert.assertEquals;
+import static common.Assert.assertNotEquals;
+import static common.Assert.assertNotSame;
+import static common.Assert.assertNull;
+import static common.Assert.assertSame;
+import static common.Assert.assertThat;
+import static common.Assert.assertTrue;
+import static common.Assert.expectThrows;
+import static common.Assert.fail;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertNotSame;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertSame;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.expectThrows;
-import static org.junit.Assert.fail;
 
 import java.io.IOException;
 import java.math.BigDecimal;
 
-import org.junit.Assert;
-import org.junit.Assert.ThrowingRunnable;
-import org.junit.ComparisonFailure;
-import org.junit.Test;
+import common.Assert;
+import common.ComparisonFailure;
+import common.Assert.ThrowingRunnable;
+
+import org.junit.annotation.Test;
 import org.junit.internal.ArrayComparisonFailure;
 
 /**
- * Tests for {@link org.junit.Assert}
+ * Tests for {@link common.Assert}
  */
 public class AssertionTest {
 // If you want to use 1.4 assertions, they will be reported correctly.

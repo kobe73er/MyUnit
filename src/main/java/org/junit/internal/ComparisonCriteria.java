@@ -3,7 +3,7 @@ package org.junit.internal;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
-import org.junit.Assert;
+import common.Assert;
 
 /**
  * Defines criteria for finding two items "equal enough". Concrete subclasses

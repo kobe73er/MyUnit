@@ -1,12 +1,12 @@
 package org.junit.runner;
 
+import static common.Assume.assumeThat;
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.startsWith;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.junit.Assume.assumeThat;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.annotation.Rule;
+import org.junit.annotation.Test;
 import org.junit.experimental.categories.ExcludeCategories;
 import org.junit.rules.ExpectedException;
 import org.junit.rules.TestName;

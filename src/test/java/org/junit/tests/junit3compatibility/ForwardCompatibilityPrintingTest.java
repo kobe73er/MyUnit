@@ -4,14 +4,15 @@ import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
 import java.io.PrintStream;
 
+import common.Assert;
+
 import junit.framework.JUnit4TestAdapter;
 import junit.framework.TestCase;
 import junit.framework.TestResult;
 import junit.framework.TestSuite;
 import junit.textui.ResultPrinter;
 import junit.textui.TestRunner;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.annotation.Test;
 
 public class ForwardCompatibilityPrintingTest extends TestCase {
     static class TestResultPrinter extends ResultPrinter {

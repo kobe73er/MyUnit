@@ -8,12 +8,12 @@ import org.junit.internal.requests.FilterRequest;
 import org.junit.internal.requests.SortingRequest;
 import org.junit.internal.runners.ErrorReportingRunner;
 import org.junit.runner.manipulation.Filter;
-import org.junit.runners.model.InitializationError;
+import org.junit.runners.model.exception.InitializationError;
 
 /**
  * A <code>Request</code> is an abstract description of tests to be run. Older versions of
  * JUnit did not need such a concept--tests to be run were described either by classes containing
- * tests or a tree of {@link  org.junit.Test}s. However, we want to support filtering and sorting,
+ * tests or a tree of {@link  org.junit.annotation.Test}s. However, we want to support filtering and sorting,
  * so we need a more abstract specification than the tests themselves and a richer
  * specification than just the classes.
  *

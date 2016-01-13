@@ -1,20 +1,20 @@
 package org.junit.tests.experimental.max;
 
+import static common.Assert.assertEquals;
+import static common.Assert.assertThat;
+import static common.Assert.assertTrue;
+import static common.Assert.fail;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 import junit.framework.TestCase;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.annotation.After;
+import org.junit.annotation.Before;
+import org.junit.annotation.Test;
 import org.junit.experimental.max.MaxCore;
 import org.junit.internal.runners.JUnit38ClassRunner;
 import org.junit.runner.Computer;

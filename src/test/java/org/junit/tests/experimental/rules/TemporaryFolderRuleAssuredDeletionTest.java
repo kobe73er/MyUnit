@@ -1,15 +1,15 @@
 package org.junit.tests.experimental.rules;
 
+import static common.Assert.assertThat;
 import static org.hamcrest.CoreMatchers.containsString;
-import static org.junit.Assert.assertThat;
 import static org.junit.experimental.results.PrintableResult.testResult;
 import static org.junit.experimental.results.ResultMatchers.failureCountIs;
 import static org.junit.experimental.results.ResultMatchers.isSuccessful;
 
 import java.io.IOException;
 
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.annotation.Rule;
+import org.junit.annotation.Test;
 import org.junit.experimental.results.PrintableResult;
 import org.junit.rules.TemporaryFolder;
 

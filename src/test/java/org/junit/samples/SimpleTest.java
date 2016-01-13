@@ -1,10 +1,9 @@
 package org.junit.samples;
 
-import static org.junit.Assert.assertEquals;
-
+import static common.Assert.assertEquals;
 import junit.framework.JUnit4TestAdapter;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.annotation.Before;
+import org.junit.annotation.Test;
 
 /**
  * Some simple tests.

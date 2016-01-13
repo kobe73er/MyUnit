@@ -1,19 +1,20 @@
 package org.junit.rules;
 
+import static common.Assert.assertEquals;
+import static common.Assert.assertThat;
+import static common.Assert.assertTrue;
+import static common.Assert.fail;
+import static common.Assume.assumeTrue;
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
 import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
-import static org.junit.Assume.assumeTrue;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.AssumptionViolatedException;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
+import common.AssumptionViolatedException;
+
+import org.junit.annotation.Before;
+import org.junit.annotation.Rule;
+import org.junit.annotation.Test;
 import org.junit.runner.Description;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Request;

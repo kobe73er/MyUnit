@@ -1,8 +1,7 @@
 package org.junit.runner;
 
-import org.junit.Test;
+import org.junit.annotation.Test;
 import org.junit.tests.TestSystem;
-
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;

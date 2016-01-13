@@ -1,4 +1,4 @@
-package org.junit.runners.model;
+package org.junit.runners.model.exception;
 
 import java.util.ArrayList;
 import java.util.Collections;

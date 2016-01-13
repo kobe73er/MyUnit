@@ -1,14 +1,13 @@
 package org.junit.tests.running.classes;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
-
-import org.junit.Test;
+import static common.Assert.assertEquals;
+import static common.Assert.fail;
+import org.junit.annotation.Test;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import org.junit.runners.model.InitializationError;
+import org.junit.runners.model.exception.InitializationError;
 
 public class UseSuiteAsASuperclassTest {
 

@@ -1,17 +1,17 @@
 package org.junit.runners;
 
-import static org.junit.Assert.assertEquals;
+import static common.Assert.assertEquals;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-import org.junit.Test;
+import org.junit.annotation.Test;
 import org.junit.runner.Description;
 import org.junit.runner.notification.Failure;
 import org.junit.runner.notification.RunListener;
 import org.junit.runner.notification.RunNotifier;
 import org.junit.runners.model.FrameworkMethod;
-import org.junit.runners.model.InitializationError;
 import org.junit.runners.model.Statement;
+import org.junit.runners.model.exception.InitializationError;
 
 /**
  * Tests that verify proper behavior for custom runners that extend

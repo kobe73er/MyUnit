@@ -1,17 +1,17 @@
 package org.junit.tests.experimental.theories;
 
+import static common.Assert.assertEquals;
+import static common.Assert.assertThat;
+import static common.Assert.assertTrue;
+import static common.Assume.assumeTrue;
 import static org.hamcrest.CoreMatchers.isA;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assume.assumeTrue;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.util.List;
 
 import org.hamcrest.CoreMatchers;
-import org.junit.Test;
+import org.junit.annotation.Test;
 import org.junit.experimental.theories.DataPoint;
 import org.junit.experimental.theories.ParameterSignature;
 import org.junit.experimental.theories.Theories;

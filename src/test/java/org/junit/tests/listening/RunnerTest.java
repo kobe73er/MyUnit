@@ -1,10 +1,9 @@
 package org.junit.tests.listening;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
+import static common.Assert.assertEquals;
+import static common.Assert.assertTrue;
 import junit.framework.TestCase;
-import org.junit.Test;
+import org.junit.annotation.Test;
 import org.junit.runner.Description;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.notification.RunListener;

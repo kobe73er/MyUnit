@@ -6,11 +6,11 @@ import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.annotation.After;
+import org.junit.annotation.AfterClass;
+import org.junit.annotation.Before;
+import org.junit.annotation.BeforeClass;
+import org.junit.annotation.Test;
 import org.junit.runners.BlockJUnit4ClassRunner;
 
 /**

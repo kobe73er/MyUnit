@@ -1,18 +1,18 @@
 package org.junit.tests.experimental.rules;
 
+import static common.Assert.assertThat;
+import static common.Assert.assertTrue;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
 
 import java.io.File;
 import java.io.IOException;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.annotation.After;
+import org.junit.annotation.Before;
+import org.junit.annotation.Rule;
+import org.junit.annotation.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.rules.TemporaryFolder;
 

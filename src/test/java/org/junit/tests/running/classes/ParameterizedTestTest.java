@@ -1,11 +1,11 @@
 package org.junit.tests.running.classes;
 
+import static common.Assert.assertEquals;
+import static common.Assert.assertThat;
+import static common.Assert.assertTrue;
+import static common.Assert.fail;
 import static java.util.Arrays.asList;
 import static org.hamcrest.CoreMatchers.containsString;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 import static org.junit.experimental.results.PrintableResult.testResult;
 
 import java.util.Arrays;
@@ -13,9 +13,9 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.annotation.AfterClass;
+import org.junit.annotation.BeforeClass;
+import org.junit.annotation.Test;
 import org.junit.runner.Description;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Request;
@@ -27,7 +27,7 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
 import org.junit.runners.Parameterized.UseParametersRunnerFactory;
-import org.junit.runners.model.InitializationError;
+import org.junit.runners.model.exception.InitializationError;
 import org.junit.runners.parameterized.ParametersRunnerFactory;
 import org.junit.runners.parameterized.TestWithParameters;
 

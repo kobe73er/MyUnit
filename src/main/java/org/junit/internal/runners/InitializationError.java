@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * Use the published version:
- * {@link org.junit.runners.model.InitializationError}
+ * {@link org.junit.runners.model.exception.InitializationError}
  * This may disappear as soon as 1 April 2009
  */
 @Deprecated

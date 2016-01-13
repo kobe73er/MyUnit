@@ -18,9 +18,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.BeforeClass;
+import common.Assert;
+
+import org.junit.annotation.Before;
+import org.junit.annotation.BeforeClass;
 import org.junit.internal.MethodSorter;
 
 /**
@@ -28,7 +29,7 @@ import org.junit.internal.MethodSorter;
  *
  * @since 4.5
  */
-public class TestClass implements Annotatable {
+public class TestClass implements IAnnotatable {
     private static final FieldComparator FIELD_COMPARATOR = new FieldComparator();
     private static final MethodComparator METHOD_COMPARATOR = new MethodComparator();
 

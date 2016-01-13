@@ -1,15 +1,15 @@
 package org.junit.tests.manipulation;
 
+import static common.Assert.assertEquals;
+import static common.Assert.assertThat;
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
 
 import java.util.Arrays;
 import java.util.List;
 
 import junit.framework.JUnit4TestAdapter;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.annotation.BeforeClass;
+import org.junit.annotation.Test;
 import org.junit.runner.Description;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Request;

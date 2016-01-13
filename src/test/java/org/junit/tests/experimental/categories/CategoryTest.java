@@ -1,23 +1,24 @@
 package org.junit.tests.experimental.categories;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 import static org.junit.experimental.results.PrintableResult.testResult;
 import static org.junit.experimental.results.ResultMatchers.isSuccessful;
 import static org.junit.experimental.results.ResultMatchers.failureCountIs;
 import static org.hamcrest.core.AnyOf.anyOf;
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.core.IsEqual.equalTo;
+import static common.Assert.assertEquals;
+import static common.Assert.assertFalse;
+import static common.Assert.assertThat;
+import static common.Assert.assertTrue;
+import static common.Assert.fail;
 import static java.lang.String.format;
 
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
-import org.junit.Ignore;
-import org.junit.Test;
+
+import org.junit.annotation.Ignore;
+import org.junit.annotation.Test;
 import org.junit.experimental.categories.Categories;
 import org.junit.experimental.categories.Categories.CategoryFilter;
 import org.junit.experimental.categories.Categories.ExcludeCategory;
@@ -31,7 +32,7 @@ import org.junit.runner.manipulation.NoTestsRemainException;
 import org.junit.runners.BlockJUnit4ClassRunner;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
-import org.junit.runners.model.InitializationError;
+import org.junit.runners.model.exception.InitializationError;
 
 public class CategoryTest {
     public interface FastTests {

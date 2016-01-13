@@ -1,13 +1,13 @@
 package org.junit.tests.experimental.theories.runner;
 
+import static common.Assert.assertEquals;
+import static common.Assert.assertThat;
 import static org.hamcrest.CoreMatchers.containsString;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
 import static org.junit.tests.experimental.theories.TheoryTestUtils.potentialAssignments;
 
 import java.util.List;
 
-import org.junit.Test;
+import org.junit.annotation.Test;
 import org.junit.experimental.theories.DataPoint;
 import org.junit.experimental.theories.DataPoints;
 import org.junit.experimental.theories.FromDataPoints;

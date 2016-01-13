@@ -1,19 +1,19 @@
 package org.junit.runners.model;
 
+import static common.Assert.assertEquals;
+import static common.Assert.assertFalse;
+import static common.Assert.assertThat;
+import static common.Assert.assertTrue;
 import static org.hamcrest.CoreMatchers.hasItem;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.nullValue;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
 
 import java.lang.annotation.Annotation;
 import java.util.List;
 
-import org.junit.Ignore;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.annotation.Ignore;
+import org.junit.annotation.Rule;
+import org.junit.annotation.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.rules.TestRule;
 import org.junit.runner.RunWith;

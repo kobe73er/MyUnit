@@ -10,8 +10,8 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Request;
 import org.junit.runner.Result;
 import org.junit.runner.Runner;
-import org.junit.runners.model.InitializationError;
 import org.junit.runners.model.TestClass;
+import org.junit.runners.model.exception.InitializationError;
 
 public final class TheoryTestUtils {
     

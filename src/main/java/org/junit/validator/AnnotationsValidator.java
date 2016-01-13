@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.junit.runners.model.Annotatable;
+import org.junit.runners.model.IAnnotatable;
 import org.junit.runners.model.FrameworkField;
 import org.junit.runners.model.FrameworkMethod;
 import org.junit.runners.model.TestClass;
@@ -40,7 +40,7 @@ public final class AnnotationsValidator implements TestClassValidator {
         return validationErrors;
     }
 
-    private static abstract class AnnotatableValidator<T extends Annotatable> {
+    private static abstract class AnnotatableValidator<T extends IAnnotatable> {
         private static final AnnotationValidatorFactory ANNOTATION_VALIDATOR_FACTORY = new AnnotationValidatorFactory();
 
         abstract Iterable<T> getAnnotatablesForTestClass(TestClass testClass);

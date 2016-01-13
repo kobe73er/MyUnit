@@ -1,9 +1,8 @@
 package org.junit.internal.matchers;
 
-import org.junit.Test;
-
+import org.junit.annotation.Test;
+import static common.Assert.assertThat;
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
 import static org.junit.internal.matchers.ThrowableCauseMatcher.hasCause;
 
 public class ThrowableCauseMatcherTest {

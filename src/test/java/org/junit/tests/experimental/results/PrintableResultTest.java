@@ -1,9 +1,9 @@
 package org.junit.tests.experimental.results;
 
+import static common.Assert.assertThat;
 import static java.util.Arrays.asList;
 import static org.hamcrest.CoreMatchers.allOf;
 import static org.hamcrest.CoreMatchers.containsString;
-import static org.junit.Assert.assertThat;
 
 import java.util.Arrays;
 

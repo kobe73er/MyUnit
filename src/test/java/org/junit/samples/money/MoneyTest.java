@@ -1,15 +1,14 @@
 package org.junit.samples.money;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
-
+import static common.Assert.assertEquals;
+import static common.Assert.assertFalse;
+import static common.Assert.assertTrue;
 import junit.framework.JUnit4TestAdapter;
 import junit.samples.money.IMoney;
 import junit.samples.money.Money;
 import junit.samples.money.MoneyBag;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.annotation.Before;
+import org.junit.annotation.Test;
 
 public class MoneyTest {
     private Money f12CHF;

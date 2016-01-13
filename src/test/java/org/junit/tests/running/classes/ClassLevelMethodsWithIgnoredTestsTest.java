@@ -1,14 +1,14 @@
 package org.junit.tests.running.classes;
 
-import static org.junit.Assert.fail;
+import static common.Assert.fail;
 
 import java.util.List;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.ClassRule;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.annotation.AfterClass;
+import org.junit.annotation.BeforeClass;
+import org.junit.annotation.ClassRule;
+import org.junit.annotation.Ignore;
+import org.junit.annotation.Test;
 import org.junit.experimental.categories.Categories.CategoryFilter;
 import org.junit.experimental.categories.Category;
 import org.junit.rules.TestRule;

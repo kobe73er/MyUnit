@@ -1,8 +1,7 @@
 package org.junit.tests.listening;
 
-import static org.junit.Assert.assertEquals;
-
-import org.junit.Test;
+import static common.Assert.assertEquals;
+import org.junit.annotation.Test;
 import org.junit.runner.Description;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.notification.RunListener;

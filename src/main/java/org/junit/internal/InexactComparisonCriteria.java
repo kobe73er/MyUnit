@@ -1,6 +1,6 @@
 package org.junit.internal;
 
-import org.junit.Assert;
+import common.Assert;
 
 public class InexactComparisonCriteria extends ComparisonCriteria {
     public Object fDelta;

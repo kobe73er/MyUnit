@@ -1,6 +1,6 @@
 package org.junit.tests.running.methods;
 
-import static org.junit.Assert.assertEquals;
+import static common.Assert.assertEquals;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -8,16 +8,16 @@ import java.util.Collections;
 import java.util.List;
 
 import junit.framework.JUnit4TestAdapter;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.annotation.After;
+import org.junit.annotation.AfterClass;
+import org.junit.annotation.Before;
+import org.junit.annotation.BeforeClass;
+import org.junit.annotation.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.BlockJUnit4ClassRunner;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
-import org.junit.runners.model.InitializationError;
+import org.junit.runners.model.exception.InitializationError;
 
 @RunWith(Parameterized.class)
 public class ParameterizedTestMethodTest {

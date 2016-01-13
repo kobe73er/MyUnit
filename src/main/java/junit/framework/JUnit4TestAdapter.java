@@ -2,7 +2,7 @@ package junit.framework;
 
 import java.util.List;
 
-import org.junit.Ignore;
+import org.junit.annotation.Ignore;
 import org.junit.runner.Describable;
 import org.junit.runner.Description;
 import org.junit.runner.Request;

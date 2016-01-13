@@ -1,13 +1,12 @@
 package org.junit.tests.experimental.rules;
 
+import static common.Assert.assertThat;
+import static common.Assume.assumeTrue;
 import static junit.framework.Assert.fail;
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assume.assumeTrue;
 import static org.junit.runner.JUnitCore.runClasses;
-
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.annotation.Rule;
+import org.junit.annotation.Test;
 import org.junit.rules.TestWatchman;
 import org.junit.runners.model.FrameworkMethod;
 

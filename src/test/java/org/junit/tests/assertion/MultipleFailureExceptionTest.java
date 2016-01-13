@@ -1,21 +1,21 @@
 package org.junit.tests.assertion;
 
+import static common.Assert.assertSame;
+import static common.Assert.assertThat;
+import static common.Assert.assertTrue;
+import static common.Assert.fail;
 import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.assertSame;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 
 import java.lang.annotation.AnnotationFormatError;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.junit.Test;
-import org.junit.runners.model.MultipleFailureException;
+import org.junit.annotation.Test;
+import org.junit.runners.model.exception.MultipleFailureException;
 
 /**
- * Tests for {@link org.junit.runners.model.MultipleFailureException}
+ * Tests for {@link org.junit.runners.model.exception.MultipleFailureException}
  *
  * @author kcooney@google.com (Kevin Cooney)
  */

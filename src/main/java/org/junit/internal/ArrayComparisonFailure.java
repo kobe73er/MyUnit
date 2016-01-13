@@ -3,7 +3,7 @@ package org.junit.internal;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.Assert;
+import common.Assert;
 
 /**
  * Thrown when two array elements differ

@@ -108,14 +108,14 @@ public class RunListener {
      * false
      *
      * @param failure describes the test that failed and the
-     * {@link org.junit.AssumptionViolatedException} that was thrown
+     * {@link common.AssumptionViolatedException} that was thrown
      */
     public void testAssumptionFailure(Failure failure) {
     }
 
     /**
      * Called when a test will not be run, generally because a test method is annotated
-     * with {@link org.junit.Ignore}.
+     * with {@link org.junit.annotation.Ignore}.
      *
      * @param description describes the test that will not be run
      */

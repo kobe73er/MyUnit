@@ -1,23 +1,23 @@
 package org.junit.tests.running.methods;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static common.Assert.assertEquals;
+import static common.Assert.assertTrue;
 
 import java.util.Collections;
 import java.util.List;
 
 import junit.framework.JUnit4TestAdapter;
 import junit.framework.TestResult;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.annotation.After;
+import org.junit.annotation.AfterClass;
+import org.junit.annotation.Before;
+import org.junit.annotation.BeforeClass;
+import org.junit.annotation.Ignore;
+import org.junit.annotation.Test;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runners.BlockJUnit4ClassRunner;
-import org.junit.runners.model.InitializationError;
+import org.junit.runners.model.exception.InitializationError;
 
 public class TestMethodTest {
 

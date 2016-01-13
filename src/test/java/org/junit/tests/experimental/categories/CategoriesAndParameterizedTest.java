@@ -1,11 +1,12 @@
 package org.junit.tests.experimental.categories;
 
-import static org.junit.Assert.assertEquals;
+import static common.Assert.assertEquals;
 
 import java.util.Arrays;
 
-import org.junit.Assert;
-import org.junit.Test;
+import common.Assert;
+
+import org.junit.annotation.Test;
 import org.junit.experimental.categories.Categories;
 import org.junit.experimental.categories.Categories.IncludeCategory;
 import org.junit.experimental.categories.Category;

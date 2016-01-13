@@ -7,7 +7,7 @@ import java.lang.annotation.Annotation;
  * 
  * @since 4.12
  */
-public interface Annotatable {
+public interface IAnnotatable {
     /**
      * Returns the model elements' annotations.
      */

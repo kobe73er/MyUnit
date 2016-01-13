@@ -15,7 +15,7 @@ import org.junit.runner.Request;
 import org.junit.runner.Result;
 import org.junit.runner.Runner;
 import org.junit.runners.Suite;
-import org.junit.runners.model.InitializationError;
+import org.junit.runners.model.exception.InitializationError;
 
 /**
  * A replacement for JUnitCore, which keeps track of runtime and failure history, and reorders tests

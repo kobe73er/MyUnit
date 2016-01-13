@@ -1,7 +1,7 @@
 package org.junit.tests.experimental.theories;
 
-import static org.junit.Assert.*;
-import org.junit.Test;
+import static common.Assert.*;
+import org.junit.annotation.Test;
 import org.junit.experimental.theories.PotentialAssignment;
 import org.junit.experimental.theories.PotentialAssignment.CouldNotGenerateValueException;
 

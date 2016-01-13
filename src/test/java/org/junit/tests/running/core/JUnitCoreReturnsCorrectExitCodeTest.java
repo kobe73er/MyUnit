@@ -1,9 +1,8 @@
 package org.junit.tests.running.core;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
-
-import org.junit.Test;
+import static common.Assert.assertEquals;
+import static common.Assert.fail;
+import org.junit.annotation.Test;
 import org.junit.runner.JUnitCore;
 
 public class JUnitCoreReturnsCorrectExitCodeTest {

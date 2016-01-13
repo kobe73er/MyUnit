@@ -1,14 +1,14 @@
 package org.junit.tests.description;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static common.Assert.assertEquals;
+import static common.Assert.assertTrue;
 
 import java.lang.annotation.Annotation;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.annotation.Ignore;
+import org.junit.annotation.Test;
 import org.junit.runner.Description;
 import org.junit.runner.Request;
 

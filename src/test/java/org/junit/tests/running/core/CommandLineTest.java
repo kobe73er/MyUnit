@@ -1,14 +1,14 @@
 package org.junit.tests.running.core;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static common.Assert.assertEquals;
+import static common.Assert.assertTrue;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.annotation.After;
+import org.junit.annotation.Before;
+import org.junit.annotation.Test;
 import org.junit.runner.JUnitCore;
 
 public class CommandLineTest {

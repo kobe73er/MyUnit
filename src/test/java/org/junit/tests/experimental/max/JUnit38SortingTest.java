@@ -1,14 +1,14 @@
 package org.junit.tests.experimental.max;
 
-import static org.junit.Assert.assertEquals;
+import static common.Assert.assertEquals;
 
 import java.io.File;
 import java.util.List;
 
 import junit.framework.TestCase;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.annotation.After;
+import org.junit.annotation.Before;
+import org.junit.annotation.Test;
 import org.junit.experimental.max.MaxCore;
 import org.junit.runner.Description;
 import org.junit.runner.Request;

@@ -1,7 +1,7 @@
 package org.junit.internal.runners.rules;
 
-import org.junit.ClassRule;
-import org.junit.Rule;
+import org.junit.annotation.ClassRule;
+import org.junit.annotation.Rule;
 import org.junit.rules.MethodRule;
 import org.junit.rules.TestRule;
 import org.junit.runners.model.FrameworkMember;
@@ -147,8 +147,8 @@ public class RuleMemberValidator {
     }
 
     /**
-     * Encapsulates a single piece of validation logic, used to determine if {@link org.junit.Rule} and
-     * {@link org.junit.ClassRule} annotations have been used correctly
+     * Encapsulates a single piece of validation logic, used to determine if {@link org.junit.annotation.Rule} and
+     * {@link org.junit.annotation.ClassRule} annotations have been used correctly
      */
     interface RuleValidator {
         /**

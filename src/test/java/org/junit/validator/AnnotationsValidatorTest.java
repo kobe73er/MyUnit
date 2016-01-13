@@ -1,8 +1,8 @@
 package org.junit.validator;
 
+import static common.Assert.assertThat;
 import static java.util.Arrays.asList;
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
 
 import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
@@ -10,7 +10,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.util.Collection;
 import java.util.List;
 
-import org.junit.Test;
+import org.junit.annotation.Test;
 import org.junit.runners.model.FrameworkField;
 import org.junit.runners.model.FrameworkMethod;
 import org.junit.runners.model.TestClass;

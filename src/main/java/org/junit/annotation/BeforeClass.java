@@ -1,4 +1,4 @@
-package org.junit;
+package org.junit.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -28,7 +28,7 @@ import java.lang.annotation.Target;
  * }
  * </pre>
  *
- * @see org.junit.AfterClass
+ * @see org.junit.annotation.AfterClass
  * @since 4.0
  */
 @Retention(RetentionPolicy.RUNTIME)

@@ -1,6 +1,6 @@
 package org.junit.tests.experimental.rules;
 
-import static org.junit.Assert.assertEquals;
+import static common.Assert.assertEquals;
 import static org.junit.internal.runners.rules.RuleMemberValidator.CLASS_RULE_METHOD_VALIDATOR;
 import static org.junit.internal.runners.rules.RuleMemberValidator.CLASS_RULE_VALIDATOR;
 import static org.junit.internal.runners.rules.RuleMemberValidator.RULE_METHOD_VALIDATOR;
@@ -9,9 +9,9 @@ import static org.junit.internal.runners.rules.RuleMemberValidator.RULE_VALIDATO
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.ClassRule;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.annotation.ClassRule;
+import org.junit.annotation.Rule;
+import org.junit.annotation.Test;
 import org.junit.rules.MethodRule;
 import org.junit.rules.TemporaryFolder;
 import org.junit.rules.TestRule;

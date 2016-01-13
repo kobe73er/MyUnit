@@ -1,6 +1,6 @@
 package org.junit.runners;
 
-import org.junit.runners.model.InitializationError;
+import org.junit.runners.model.exception.InitializationError;
 
 /**
  * Aliases the current default JUnit 4 class runner, for future-proofing. If

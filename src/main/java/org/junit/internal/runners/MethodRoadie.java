@@ -15,7 +15,7 @@ import org.junit.runner.Description;
 import org.junit.runner.notification.Failure;
 import org.junit.runner.notification.RunNotifier;
 import org.junit.runners.BlockJUnit4ClassRunner;
-import org.junit.runners.model.TestTimedOutException;
+import org.junit.runners.model.exception.TestTimedOutException;
 
 /**
  * @deprecated Included for backwards compatibility with JUnit 4.4. Will be

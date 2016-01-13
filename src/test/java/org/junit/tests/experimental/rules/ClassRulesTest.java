@@ -3,17 +3,17 @@
  */
 package org.junit.tests.experimental.rules;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
+import static common.Assert.assertEquals;
+import static common.Assert.assertThat;
+import static common.Assert.assertTrue;
 import static org.junit.experimental.results.PrintableResult.testResult;
 import static org.junit.experimental.results.ResultMatchers.isSuccessful;
 
 import java.util.LinkedList;
 import java.util.List;
 
-import org.junit.ClassRule;
-import org.junit.Test;
+import org.junit.annotation.ClassRule;
+import org.junit.annotation.Test;
 import org.junit.rules.ExternalResource;
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;

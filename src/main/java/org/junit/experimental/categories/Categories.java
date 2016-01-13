@@ -10,8 +10,8 @@ import org.junit.runner.Description;
 import org.junit.runner.manipulation.Filter;
 import org.junit.runner.manipulation.NoTestsRemainException;
 import org.junit.runners.Suite;
-import org.junit.runners.model.InitializationError;
 import org.junit.runners.model.RunnerBuilder;
+import org.junit.runners.model.exception.InitializationError;
 
 /**
  * From a given set of test classes, runs only the classes and methods that are

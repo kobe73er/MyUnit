@@ -1,15 +1,17 @@
 package org.junit.rules;
 
+import static common.Assert.assertThat;
+import static common.Assert.fail;
 import static java.lang.String.format;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.instanceOf;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.fail;
 import static org.junit.internal.matchers.ThrowableCauseMatcher.hasCause;
 import static org.junit.internal.matchers.ThrowableMessageMatcher.hasMessage;
+
+import common.AssumptionViolatedException;
+
 import org.hamcrest.Matcher;
 import org.hamcrest.StringDescription;
-import org.junit.AssumptionViolatedException;
 import org.junit.runners.model.Statement;
 
 /**
@@ -65,7 +67,7 @@ import org.junit.runners.model.Statement;
  * <h3>AssumptionViolatedExceptions</h3>
  * <p>
  * JUnit uses {@link AssumptionViolatedException}s for indicating that a test
- * provides no useful information. (See {@link org.junit.Assume} for more
+ * provides no useful information. (See {@link common.Assume} for more
  * information.) You have to call {@code assume} methods before you set
  * expectations of the {@code ExpectedException} rule. In this case the rule
  * will not handle consume the exceptions and it can be handled by the

@@ -1,13 +1,12 @@
 package org.junit.tests.experimental.theories.runner;
 
+import static common.Assert.assertThat;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.CoreMatchers.notNullValue;
-import static org.junit.Assert.assertThat;
 import static org.junit.experimental.results.PrintableResult.testResult;
 import static org.junit.experimental.results.ResultMatchers.isSuccessful;
-
-import org.junit.Test;
+import org.junit.annotation.Test;
 import org.junit.experimental.results.ResultMatchers;
 import org.junit.experimental.theories.DataPoint;
 import org.junit.experimental.theories.DataPoints;

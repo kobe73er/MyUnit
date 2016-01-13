@@ -1,5 +1,8 @@
 package org.junit.tests.experimental.rules;
 
+import static common.Assert.assertThat;
+import static common.Assert.fail;
+import static common.Assume.assumeTrue;
 import static java.util.Arrays.asList;
 import static org.hamcrest.CoreMatchers.any;
 import static org.hamcrest.CoreMatchers.containsString;
@@ -7,9 +10,6 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.nullValue;
 import static org.hamcrest.CoreMatchers.startsWith;
 import static org.hamcrest.core.IsEqual.equalTo;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.fail;
-import static org.junit.Assume.assumeTrue;
 import static org.junit.rules.ExpectedException.none;
 import static org.junit.tests.experimental.rules.EventCollector.everyTestRunSuccessful;
 import static org.junit.tests.experimental.rules.EventCollector.hasSingleAssumptionFailure;
@@ -20,8 +20,8 @@ import java.util.Collection;
 
 import org.hamcrest.CoreMatchers;
 import org.hamcrest.Matcher;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.annotation.Rule;
+import org.junit.annotation.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.RunWith;

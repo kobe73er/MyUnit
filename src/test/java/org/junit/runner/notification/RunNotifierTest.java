@@ -1,14 +1,14 @@
 package org.junit.runner.notification;
 
+import static common.Assert.assertNotNull;
+import static common.Assert.assertSame;
+import static common.Assert.assertThat;
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertSame;
-import static org.junit.Assert.assertThat;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-import org.junit.Test;
+import org.junit.annotation.Test;
 import org.junit.runner.Description;
 import org.junit.runner.Result;
 

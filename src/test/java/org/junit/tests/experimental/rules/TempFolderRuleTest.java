@@ -1,10 +1,10 @@
 package org.junit.tests.experimental.rules;
 
+import static common.Assert.assertFalse;
+import static common.Assert.assertThat;
+import static common.Assert.assertTrue;
 import static org.hamcrest.CoreMatchers.hasItem;
 import static org.hamcrest.core.IsNot.not;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
 import static org.junit.experimental.results.PrintableResult.testResult;
 import static org.junit.experimental.results.ResultMatchers.failureCountIs;
 import static org.junit.experimental.results.ResultMatchers.isSuccessful;
@@ -14,9 +14,9 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-import org.junit.After;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.annotation.After;
+import org.junit.annotation.Rule;
+import org.junit.annotation.Test;
 import org.junit.rules.TemporaryFolder;
 
 public class TempFolderRuleTest {

@@ -1,9 +1,9 @@
 package org.junit.runner.notification;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertTrue;
+import static common.Assert.assertEquals;
+import static common.Assert.assertFalse;
+import static common.Assert.assertNotEquals;
+import static common.Assert.assertTrue;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
@@ -11,7 +11,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.junit.Test;
+import org.junit.annotation.Test;
 
 /**
  * Tests for {@link SynchronizedRunListener}.

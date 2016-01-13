@@ -1,14 +1,14 @@
 package org.junit.tests.experimental.theories.runner;
 
-import static org.junit.Assert.assertEquals;
+import static common.Assert.assertEquals;
 import static org.junit.tests.experimental.theories.TheoryTestUtils.potentialAssignments;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.annotation.Rule;
+import org.junit.annotation.Test;
 import org.junit.experimental.theories.ParameterSignature;
 import org.junit.experimental.theories.ParameterSupplier;
 import org.junit.experimental.theories.ParametersSuppliedBy;
@@ -17,8 +17,8 @@ import org.junit.experimental.theories.Theories;
 import org.junit.experimental.theories.Theory;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
-import org.junit.runners.model.InitializationError;
 import org.junit.runners.model.TestClass;
+import org.junit.runners.model.exception.InitializationError;
 
 public class WithParameterSupplier {
     

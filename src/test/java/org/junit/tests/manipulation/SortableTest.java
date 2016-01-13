@@ -1,12 +1,12 @@
 package org.junit.tests.manipulation;
 
-import static org.junit.Assert.assertEquals;
+import static common.Assert.assertEquals;
 
 import java.util.Comparator;
 
 import junit.framework.JUnit4TestAdapter;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.annotation.Before;
+import org.junit.annotation.Test;
 import org.junit.experimental.runners.Enclosed;
 import org.junit.runner.Description;
 import org.junit.runner.JUnitCore;

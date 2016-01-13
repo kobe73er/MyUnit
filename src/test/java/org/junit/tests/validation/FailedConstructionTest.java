@@ -1,7 +1,8 @@
 package org.junit.tests.validation;
 
-import org.junit.Assert;
-import org.junit.Test;
+import common.Assert;
+
+import org.junit.annotation.Test;
 import org.junit.runner.Description;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

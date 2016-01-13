@@ -1,10 +1,9 @@
 package org.junit.tests.deprecated;
 
+import static common.Assert.assertThat;
+import static common.Assert.fail;
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.fail;
-
-import org.junit.Test;
+import org.junit.annotation.Test;
 import org.junit.internal.runners.JUnit4ClassRunner;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

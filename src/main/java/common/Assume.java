@@ -1,4 +1,4 @@
-package org.junit;
+package common;
 
 import static java.util.Arrays.asList;
 import static org.hamcrest.CoreMatchers.everyItem;

@@ -7,9 +7,9 @@ import java.util.concurrent.TimeUnit;
 import org.junit.runner.Computer;
 import org.junit.runner.Runner;
 import org.junit.runners.ParentRunner;
-import org.junit.runners.model.InitializationError;
 import org.junit.runners.model.RunnerBuilder;
 import org.junit.runners.model.RunnerScheduler;
+import org.junit.runners.model.exception.InitializationError;
 
 public class ParallelComputer extends Computer {
     private final boolean classes;

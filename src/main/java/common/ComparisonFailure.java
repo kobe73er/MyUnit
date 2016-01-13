@@ -1,7 +1,7 @@
-package org.junit;
+package common;
 
 /**
- * Thrown when an {@link org.junit.Assert#assertEquals(Object, Object) assertEquals(String, String)} fails.
+ * Thrown when an {@link common.Assert#assertEquals(Object, Object) assertEquals(String, String)} fails.
  * Create and throw a <code>ComparisonFailure</code> manually if you want to show users the
  * difference between two complex strings.
  * <p/>
@@ -133,7 +133,7 @@ public class ComparisonFailure extends AssertionError {
             private final String sharedSuffix;
 
             /**
-             * Can not be instantiated outside {@link org.junit.ComparisonFailure.ComparisonCompactor}.
+             * Can not be instantiated outside {@link common.ComparisonFailure.ComparisonCompactor}.
              */
             private DiffExtractor() {
                 sharedPrefix = sharedPrefix();

@@ -4,7 +4,7 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.Comparator;
 
-import org.junit.FixMethodOrder;
+import org.junit.annotation.FixMethodOrder;
 
 public class MethodSorter {
     /**

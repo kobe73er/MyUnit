@@ -1,17 +1,17 @@
 package org.junit.tests.experimental.max;
 
+import static common.Assert.assertEquals;
+import static common.Assert.assertNull;
+import static common.Assert.assertThat;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.not;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertThat;
 
 import java.lang.annotation.Annotation;
 import java.net.URL;
 import java.net.URLClassLoader;
 
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.annotation.Ignore;
+import org.junit.annotation.Test;
 import org.junit.runner.Description;
 
 public class DescriptionTest {

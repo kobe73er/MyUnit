@@ -1,15 +1,15 @@
 package org.junit.tests.listening;
 
+import static common.Assert.assertThat;
 import static org.hamcrest.core.IsNot.not;
 import static org.hamcrest.core.StringContains.containsString;
-import static org.junit.Assert.assertThat;
 
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
 import java.io.PrintStream;
 
 import junit.framework.TestCase;
-import org.junit.Test;
+import org.junit.annotation.Test;
 import org.junit.internal.TextListener;
 import org.junit.runner.JUnitCore;
 import org.junit.tests.TestSystem;

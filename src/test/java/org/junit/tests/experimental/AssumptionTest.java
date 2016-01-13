@@ -1,27 +1,28 @@
 package org.junit.tests.experimental;
 
+import static common.Assert.assertEquals;
+import static common.Assert.assertSame;
+import static common.Assert.assertThat;
+import static common.Assert.assertTrue;
+import static common.Assert.fail;
+import static common.Assume.assumeNoException;
+import static common.Assume.assumeNotNull;
+import static common.Assume.assumeThat;
+import static common.Assume.assumeTrue;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertSame;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
-import static org.junit.Assume.assumeNoException;
-import static org.junit.Assume.assumeNotNull;
-import static org.junit.Assume.assumeThat;
-import static org.junit.Assume.assumeTrue;
 import static org.junit.experimental.results.PrintableResult.testResult;
 import static org.junit.experimental.results.ResultMatchers.isSuccessful;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.Assume;
-import org.junit.AssumptionViolatedException;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import common.Assume;
+import common.AssumptionViolatedException;
+
+import org.junit.annotation.Before;
+import org.junit.annotation.BeforeClass;
+import org.junit.annotation.Test;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;

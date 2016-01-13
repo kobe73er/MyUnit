@@ -1,8 +1,7 @@
 package org.junit.tests.junit3compatibility;
 
-import static org.junit.Assert.assertNull;
-
-import org.junit.Test;
+import static common.Assert.assertNull;
+import org.junit.annotation.Test;
 import org.junit.internal.builders.SuiteMethodBuilder;
 
 public class ClassRequestTest {

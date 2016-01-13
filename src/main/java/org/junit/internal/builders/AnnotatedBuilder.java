@@ -2,8 +2,8 @@ package org.junit.internal.builders;
 
 import org.junit.runner.RunWith;
 import org.junit.runner.Runner;
-import org.junit.runners.model.InitializationError;
 import org.junit.runners.model.RunnerBuilder;
+import org.junit.runners.model.exception.InitializationError;
 
 import java.lang.reflect.Modifier;
 
